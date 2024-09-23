@@ -1,0 +1,35 @@
+1) La classe "Math" contient 2 attributs qui sont :
+	
+	- static double E : la valeur la plus proche de e (exponentiel).
+	- static double PI : la valeur la plus proche de pi (PI)
+	
+2) La particularité que j'observe sur les attributs et méthodes de cette classe
+est qu'ils ont tous le mot clé 'static'
+
+3) la méthode permettant de générer un nombre aléatoire compris entre 0 et 1 est :
+	
+	- public static double random()
+	
+	Il s'agit d'une méthode de classe car elle est précédée du mot clé "static"
+	
+4) Il y'a 4 méthodes nommées « max » qui sont :
+	
+	- public static int max(int a, int b)
+	- public static long max(long a, long b)
+	- public static float max(float a, float b)
+	- public static double max(double a, double b)
+	
+	Etant donné que le langage Java est un langage fortement typé, chacune de
+	ces méthodes est propre à un type de donnée précis.
+	
+5) 
+	a) int x= Math.max(5);
+	
+	Cette instruction est incorrecte, car selon le prototype de la méthode max(int a, int b)
+	elle attent 2 paramètres de type 'int' et dans l'exemple, un seul a été passé.
+	
+	b) int x= Math.max(5,6);
+	
+	Cette instruction est correcte et la valeur de x est 6.
+	
+	

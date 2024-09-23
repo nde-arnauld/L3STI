@@ -1,0 +1,29 @@
+1) public int compareTo(String anotherString)
+
+Il s'agit d'une méthode d'instance car elle n'est pas précédée du mot clé 'static'
+
+2) String res= String.compareTo(“bonjour”);
+
+Cette instruction n'est pas correcte pour ces raisons :
+
+	- La méthode 'compareTo()' est une méthode d'instance or ici elle est appelée
+		comme une méthode de classe.
+	- Le type de retour de cette méthode est 'int' et pourtant dans l'instruction
+		la valeur de retour est affectée à une variable de type 'String'
+		
+3) public int length()
+
+Cette méthode est une méthode d'instance.
+
+4) 
+	String st = (“bonjour”);
+	int lg = String.length(st);
+	
+La deuxième instruction n'est pas correcte car la méthode 'length()' est une
+méthode d'instance et ne doit pas être appelée sur le nom de la classe et aussi 
+cette méthode ne prend rien en paramètre.
+
+Pour corriger cela nous ferons :
+
+	String st = (“bonjour”);
+	int lg = st.length();
