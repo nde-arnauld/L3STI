@@ -1,5 +1,7 @@
 package exercice2;
 
+import java.text.DecimalFormat;
+
 public class TestVecteur3D {
 
 	public static void main(String[] args) {

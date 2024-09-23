@@ -1,7 +1,7 @@
 package exercice5;
 
 public class Vacataire extends Enseignant {
-	private int UNE_HEURE_DE_COURS = 40;
+	private int SALAIRE_HEURE = 40;
 	private int nbHeuresCours;
 	
 	public Vacataire(String nom, int nbHeuresCours) {
@@ -10,7 +10,7 @@ public class Vacataire extends Enseignant {
 	}
 	
 	public double salaire() {
-		return nbHeuresCours * UNE_HEURE_DE_COURS;
+		return nbHeuresCours * SALAIRE_HEURE;
 	}
 	
 	public String toString() {
